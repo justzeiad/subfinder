@@ -29,7 +29,7 @@ class SubFinder:
         parser.add_argument("domain", help="The domain to scan")
         parser.add_argument("-o", "--output", help="Output file name")
         parser.add_argument("-t", "--threads", type=int, default=5, help="Number of threads to use")
-        parser.add_argument("-w", "--wordlist", help="Path to the wordlist file", default='wordlists/wordlist.txt')
+        parser.add_argument("-w", "--wordlist", help="Path to the wordlist file", default='wordlists/small.txt')
         parser.add_argument("-v", "--verbose", action="store_true", help="Increase output verbosity")
 
         return parser.parse_args()
