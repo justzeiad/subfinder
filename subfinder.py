@@ -49,6 +49,7 @@ class SubFinder:
             print(f"\033[32m [+] \033[0m {subdomain}")
             return subdomain
 
+
         return None
 
     def enumerate_subdomains(self):
@@ -79,9 +80,7 @@ class SubFinder:
             with open(self.output, 'w') as f:
                 f.write('\n'.join(subdomains))
 
-        if self.verbose:
-            print('\n'.join(subdomains))
-        return subdomains
+            print(f'\nFile {self.output} saved (:\n')
 
 
 Header()
