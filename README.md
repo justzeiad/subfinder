@@ -32,7 +32,7 @@ To run the subfinder, open a terminal and navigate to the directory where you sa
 `python subfinder.py -v <domain> -w <wordlist path> -o <output>` Replace `-v <domain>` with the domain name of the target machine, `-w <wordlist path>` with the Wordlist path.
 
 
-use `-o <output>` the save the result in a output file.
+use `-o <output>` that save the result in a output file.
 
 you can change the threads by `-t <number>` by default set by 10.
 
