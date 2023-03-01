@@ -10,7 +10,7 @@ def Header():
     print(pyfiglet.figlet_format("SUB FINDER"))
     print(pyfiglet.figlet_format("Made By Yuu", font="digital"))
     print("-" * 50)
-    print("Scaning Start At: ", str(datetime.now()))
+    print("Start At: ", str(datetime.now()))
     print("-" * 50)
 
 
@@ -21,19 +21,19 @@ class SubFinder:
         self.threads = threads
         self.wordlist = wordlist
         self.verbose = verbose
-        
+
     @staticmethod
     def get_args():
         parser = argparse.ArgumentParser(description="Subdomain enumeration tool")
-    
+
         parser.add_argument("domain", help="The domain to scan")
         parser.add_argument("-o", "--output", help="Output file name")
         parser.add_argument("-t", "--threads", type=int, default=5, help="Number of threads to use")
-        parser.add_argument("-w", "--wordlist", help="Path to the wordlist file", required=True)
+        parser.add_argument("-w", "--wordlist", help="Path to the wordlist file", default='wordlists/wordlist.txt')
         parser.add_argument("-v", "--verbose", action="store_true", help="Increase output verbosity")
-        
+
         return parser.parse_args()
-        
+
     def scan_subdomain(self, subdomain):
         try:
             response = requests.get(f'https://{subdomain}')
@@ -50,7 +50,7 @@ class SubFinder:
             return subdomain
 
         return None
-        
+
     def enumerate_subdomains(self):
         subdomains = set()
         stop_event = threading.Event()
@@ -70,7 +70,7 @@ class SubFinder:
         except KeyboardInterrupt:
             print("\n \033[1;33;40mExiting Program !\033[0m")
             stop_event.set()
-            sys.exit()            
+            sys.exit()
 
         if stop_event.is_set():
             return set()
@@ -78,7 +78,7 @@ class SubFinder:
         if self.output:
             with open(self.output, 'w') as f:
                 f.write('\n'.join(subdomains))
-                
+
         if self.verbose:
             print('\n'.join(subdomains))
         return subdomains
