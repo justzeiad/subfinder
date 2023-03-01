@@ -1,4 +1,4 @@
-# Simple Subdomain Finder
+# Subdomain Finder
 
 [![GitHub license](https://img.shields.io/github/license/notyuu/subfinder)](https://github.com/notyuu/subfinder/blob/main/LICENSE)
 
