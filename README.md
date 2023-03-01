@@ -16,7 +16,7 @@ After installing Python, download or clone this repository to your local machine
 
 `cd subfinder`
 
-`pip install requests && pip install pyfiglet && pip install argparse`
+`pip install -r requirements.txt`
 
 
 
