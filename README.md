@@ -62,4 +62,5 @@ This script was developed by Yuu with the help of the following resources:
 
 ## Contact Me
 
-Discord: Yuu#8302
+- Email: justzeiad@proton.me
+- Discord: NotZiad#5062
