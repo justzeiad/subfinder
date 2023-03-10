@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 def Header():
     print(pyfiglet.figlet_format("SUB FINDER"))
-    print(pyfiglet.figlet_format("Made By Yuu", font="digital"))
+    print(pyfiglet.figlet_format("Made By Justzeiad", font="digital"))
     print("-" * 50)
     print("Start At: ", str(datetime.now()))
     print("-" * 50)
