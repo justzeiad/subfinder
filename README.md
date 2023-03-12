@@ -1,6 +1,6 @@
 # Subdomain Finder
 
-[![GitHub license](https://img.shields.io/github/license/notyuu/subfinder)](https://github.com/notyuu/subfinder/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/justzeiad/subfinder)](https://github.com/justzeiad/subfinder/blob/main/LICENSE)
 
 ## Description
 
@@ -12,7 +12,7 @@ To use this script, you will need Python 3 installed on your system. You can dow
 
 After installing Python, download or clone this repository to your local machine.
 
-`git clone https://github.com/notyuu/subfinder.git`
+`git clone https://github.com/justzeiad/subfinder.git`
 
 `cd subfinder`
 
@@ -24,7 +24,7 @@ After installing Python, download or clone this repository to your local machine
 
 `python subfinder.py -h`
 
-![alt text](https://github.com/notyuu/subfinder/blob/main/screenshot/usage.png)
+![alt text](https://github.com/justzeiad/subfinder/blob/main/screenshot/usage.png)
 
 To run the subfinder, open a terminal and navigate to the directory where you saved the script. Then, run the following command:
 
@@ -38,7 +38,7 @@ you can change the threads by `-t <number>` by default set by 10.
 
 
 
-![alt text](https://github.com/notyuu/subfinder/blob/main/screenshot/example.png)
+![alt text](https://github.com/justzeiad/subfinder/blob/main/screenshot/example.png)
 
 ## License
 
