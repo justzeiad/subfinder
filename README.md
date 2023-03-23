@@ -62,5 +62,5 @@ This script was developed by Yuu with the help of the following resources:
 
 ## Contact Me
 
-- Email: justzeiad@proton.me
+- Google-Email: justzeiad@gmail.com
 - Discord: NotZiad#5062
