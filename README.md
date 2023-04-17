@@ -50,7 +50,7 @@ Contributions are welcome! If you have any suggestions for improving this script
 
 ## Acknowledgements
 
-This script was developed by Yuu with the help of the following resources:
+This script was developed by JustZeiad with the help of the following resources:
 
 - [Python Requests Library](https://docs.python-requests.org/en/latest/) for sending HTTP requests to the target domain.
 
